@@ -23,7 +23,7 @@ ActiveRecord::Base.establish_connection(
 #   hometown TEXT
 #   )
 # SQL
-# 
+#
 # ActiveRecord::Base.connection.execute(sql)
 
 require_relative "../artist.rb"
