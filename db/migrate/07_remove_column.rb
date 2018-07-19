@@ -1,5 +1,5 @@
 
-class AddChildren < ActiveRecord::Migration[4.2]
+class RemoveColumn < ActiveRecord::Migration[4.2]
   def change
     remove_column :artists, :favorite_food
     remove_column :artists, :favorite_color
