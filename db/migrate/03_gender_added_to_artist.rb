@@ -4,4 +4,4 @@ class GenderAddedToArtist < ActiveRecord::Migration[4.2]
     add_column :artists, :gender, :string
   end
 
-end 
+end
