@@ -6,7 +6,7 @@ class CreateArtists < ActiveRecord::Migration[4.2]
   end
 
   def change
-    if !table_exists?(:artists)
+    if !data_source_exists?(:artists)
       create_table :artists do |t|
         t.string :name
         t.string :genre
