@@ -6,12 +6,14 @@ class CreateArtists < ActiveRecord::Migration[4.2]
   end
 
   def change
-    create_table :artists do |t|
-      t.string :name
-      t.string :genre
-      t.integer :age
-      t.string :hometown
-    end
+    if !table_exists?(artists)
+      create_table :artists do |t|
+        t.string :name
+        t.string :genre
+        t.integer :age
+        t.string :hometown
+      end
+    end 
   end
 
 end
